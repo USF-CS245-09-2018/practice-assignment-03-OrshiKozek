@@ -27,7 +27,7 @@ The only alterations I made to the Practice03Test.java file was the 3 methods I 
 
 ---------
 
-public static int find_min_recursive (double[] arr) {
+    public static int find_min_recursive (double[] arr) {
         return helper(arr, 1, 0); //O(whatever helper's total is)
         //total of find_min_recursive=> O(n)
         //O(n) because the function is called n times until the base case is reached
@@ -52,4 +52,4 @@ public static int find_min_recursive (double[] arr) {
     }
 
 COMPLEXITY OF ITERATIVE: O(n)
-COMPLEXITY OF RECURSIVE: O(n)
+/COMPLEXITY OF RECURSIVE: O(n)
