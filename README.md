@@ -13,3 +13,43 @@ The only alterations I made to the Practice03Test.java file was the 3 methods I 
     -find_min_iterative(arr)
     -find_min_recursive(arr)
     -helper(arr, first, min)
+
+---------
+    public int find_min_iterative (double[] arr) {
+        int indexOfMin = 0; //O(1)
+        for (int i = 1; i < arr.length; i++) { //O(1)
+            if (arr[i] < arr[indexOfMin]) //O(n)
+                indexOfMin = i; //O(1)
+        }
+        return indexOfMin;
+    }
+    //total=> O(n)
+
+---------
+
+public static int find_min_recursive (double[] arr) {
+        return helper(arr, 1, 0); //O(whatever helper's total is)
+        //total of find_min_recursive=> O(n)
+        //O(n) because the function is called n times until the base case is reached
+
+    }
+
+    public static int helper(double[] arr, int first, int min){
+        if (first == arr.length)  //O(1)
+            return min;
+        else{
+            if (arr[first] < arr[min]) { //O(1)
+                min = first; //O(1)
+                first++; //O(1)
+                return helper(arr, first, min); //O(n)
+            }
+            else{
+                first++;
+                return helper(arr, first, min); //O(n)
+            }
+        }
+        //total=> O(n)
+    }
+
+COMPLEXITY OF ITERATIVE: O(n)
+COMPLEXITY OF RECURSIVE: O(n)
