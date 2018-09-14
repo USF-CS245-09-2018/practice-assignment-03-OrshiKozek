@@ -52,5 +52,7 @@ The only alterations I made to the Practice03Test.java file was the 3 methods I 
     }
 
 COMPLEXITY OF ITERATIVE: O(n)
+    * because it loops through the array n-1 times (by getting rid of the constants, we get O(n))
 
 COMPLEXITY OF RECURSIVE: O(n)
+    * because it calls the recursive function n-1 times (by getting rid of the constants, we get O(n)
