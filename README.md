@@ -10,9 +10,9 @@ However, I was able to manually change the size of the array through the intelli
 (Change program arguments to the desired length)
 
 The only alterations I made to the Practice03Test.java file was the 3 methods I added:
-    -find_min_iterative(arr)
-    -find_min_recursive(arr)
-    -helper(arr, first, min)
+* find_min_iterative(arr)
+* find_min_recursive(arr)
+* helper(arr, first, min)
 
 ---------
     public int find_min_iterative (double[] arr) {
@@ -50,9 +50,10 @@ The only alterations I made to the Practice03Test.java file was the 3 methods I 
         }
         //total=> O(n)
     }
+--------------
 
 COMPLEXITY OF ITERATIVE: O(n)
-    * because it loops through the array n-1 times (by getting rid of the constants, we get O(n))
+* because it loops through the array n-1 times (by getting rid of the constants, we get O(n))
 
 COMPLEXITY OF RECURSIVE: O(n)
-    * because it calls the recursive function n-1 times (by getting rid of the constants, we get O(n)
+* because it calls the recursive function n-1 times (by getting rid of the constants, we get O(n)
