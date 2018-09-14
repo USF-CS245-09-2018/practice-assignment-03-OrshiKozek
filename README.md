@@ -3,8 +3,8 @@
 The code that is in Practice03Test.java is correct and works. However, I was not able to make the program run from terminal.
 I always got the message:
 
-Error: Could not find or load main class Practice03Test
-Caused by: java.lang.ClassNotFoundException: Practice03Test
+# Error: Could not find or load main class Practice03Test
+# Caused by: java.lang.ClassNotFoundException: Practice03Test
 
 However, I was able to manually change the size of the array through the intellij interface: Run > Edit Configurations
 (Change program arguments to the desired length)
